@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ec57f9d5e.js" crossorigin="anonymous"></script>
+    <title>Minutes of Meeting</title>
+    <style>
+        /* General body styling */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main container */
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .logo {
+            height: 56px;
+            width: 56px;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border-radius: 50%;
+        }
+
+        .title {
+            font-weight: 800;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .icon {
+            cursor: pointer;
+            margin-left: 15px;
+        }
+
+        /* Content area */
+        .content {
+            margin-top: 20px;
+        }
+
+        .meeting-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .meeting-title {
+            font-size: 32px;
+            font-weight: 600;
+            color: black;
+        }
+
+        .icons-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        .icon-img {
+            height: 48px;
+        }
+
+        .icon-middle {
+            margin: 0 20px;
+        }
+
+        /* Transcribing text */
+        .transcribing-text {
+            font-size: 32px;
+            margin-left: 15px;
+            font-weight: 600;
+            color: black;
+        }
+
+        /* Buttons container */
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .action-button {
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: 600;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <div class="main-container">
+    <div class="header">
+        <img class="logo" src="backgroud_main.jpeg" alt="logo">
+        <p class="title">OCTAVIAN.AI</p>
+        <i class="fa-solid fa-maximize icon"></i>
+        <i class="fa-solid fa-bars icon"></i>
+        <i class="fa-solid fa-arrow-right icon"></i>
+    </div>
+    <div class="content">
+        <div class="meeting-box">
+            <p class="meeting-title">Minutes of Meeting</p>
+            <div class="icons-container">
+                <img src="pngwing.com.png" class="icon-img" alt="icon">
+                <i class="fa-solid fa-plus icon-middle"></i>
+                <img src="pngwing.com.png" class="icon-img" alt="icon">
+            </div>
+            <p class="transcribing-text">transcribing .....</p>
+        </div>
+    </div>
+    <div class="buttons-container">
+        <button class="action-button">Download meeting transcript</button>
+        <button class="action-button">Report a bug</button>
+        <button class="action-button">Get help</button>
+    </div>
+   </div>
+</body>
+</html>
